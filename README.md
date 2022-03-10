@@ -1,2 +1,8 @@
 # guess-mine
-Realtime Game built with SocketIO, Gulp and Node
+Realtime Drawing Game built with SocketIO, Gulp and Node
+
+## To Do:
+- [✅] Server
+- [✅] Pug
+- [✅] Static
+- [ ] SocketIO
