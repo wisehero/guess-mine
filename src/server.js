@@ -1,5 +1,6 @@
+import { join } from "path";
 import express from "express";
-import { Socket } from "socket.io";
+import { Server, Socket } from "socket.io";
 
 const PORT = 4000;
 const app = express();
@@ -15,4 +16,5 @@ const handleListening = () => {
   console.log(`✅ Server running: http://localhost:${PORT}`);
 };
 
-app.listen(PORT, handleListening);
+const server = app.listen(PORT, handleListening);
+const io = new Server(server);
